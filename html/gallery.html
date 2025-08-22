@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Concepta Hair-Hub Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Concepta <span>Hair-Hub</span></a>
+            <nav>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Our Gallery</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hair Transformations</h2>
+                <p>Browse our collection of stunning hair makeovers and styles</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="haircuts">Haircuts</button>
+                <button class="filter-btn" data-filter="coloring">Coloring</button>
+                <button class="filter-btn" data-filter="highlights">Highlights</button>
+                <button class="filter-btn" data-filter="styling">Styling</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Haircut 1 -->
+                <div class="gallery-item" data-category="haircuts">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhhaXJjdXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=80" alt="Precision Haircut" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Precision Bob</h3>
+                        <span class="gallery-category">Haircut</span>
+                        <p>Client wanted a modern take on the classic bob with textured ends.</p>
+                    </div>
+                </div>
+                
+                <!-- Coloring 1 -->
+                <div class="gallery-item" data-category="coloring">
+                    <img src="https://images.unsplash.com/photo-1536599424079-7b5f15e9b5c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhaXIlMjBjb2xvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Vibrant Hair Color" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Copper Transformation</h3>
+                        <span class="gallery-category">Coloring</span>
+                        <p>Rich copper tones applied with balayage technique for dimension.</p>
+                    </div>
+                </div>
+                
+                <!-- Highlights -->
+                <div class="gallery-item" data-category="highlights">
+                    <img src="https://images.unsplash.com/photo-1552904216-df5e5be6b6ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGhhaXIlMjBoaWdobGlnaHRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=80" alt="Hair Highlights" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Sun-Kissed Highlights</h3>
+                        <span class="gallery-category">Highlights</span>
+                        <p>Fine babylight highlights for a natural sun-kissed effect.</p>
+                    </div>
+                </div>
+                
+                <!-- Styling -->
+                <div class="gallery-item" data-category="styling">
+                    <img src="https://images.unsplash.com/photo-1597248374164-5b01b5b4c0cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhhaXIlMjBzdHlsaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=80" alt="Evening Styling" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Elegant Updo</h3>
+                        <span class="gallery-category">Styling</span>
+                        <p>Sophisticated updo for a gala event with face-framing tendrils.</p>
+                    </div>
+                </div>
+                
+                <!-- Bridal -->
+                <div class="gallery-item" data-category="bridal">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGJyaWRhbCUyMGhhaXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=80" alt="Bridal Hair" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Bridal Braids</h3>
+                        <span class="gallery-category">Bridal</span>
+                        <p>Intricate braided style for a summer wedding with floral accents.</p>
+                    </div>
+                </div>
+                
+                <!-- Haircut 2 -->
+                <div class="gallery-item" data-category="haircuts">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGhhaXJjdXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=80" alt="Layered Cut" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Layered Shag</h3>
+                        <span class="gallery-category">Haircut</span>
+                        <p>Modern shag cut with lots of texture and movement.</p>
+                    </div>
+                </div>
+                
+                <!-- Coloring 2 -->
+                <div class="gallery-item" data-category="coloring">
+                    <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGhhaXIlMjBjb2xvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Pastel Hair Color" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Pastel Dream</h3>
+                        <span class="gallery-category">Coloring</span>
+                        <p>Soft pastel pink and lavender blend on pre-lightened hair.</p>
+                    </div>
+                </div>
+                
+                <!-- Styling 2 -->
+                <div class="gallery-item" data-category="styling">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGhhaXIlMjBzdHlsaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=80" alt="Curly Styling" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Beach Waves</h3>
+                        <span class="gallery-category">Styling</span>
+                        <p>Loose beach waves created with curling wand and texturizing spray.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section class="before-after">
+        <div class="container">
+            <div class="section-title">
+                <h2>Transformations</h2>
+                <p>See the amazing before and after results from our clients</p>
+            </div>
+            
+            <div class="comparison-slider">
+                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGhhaXIlMjBiZWZvcmUlMjBhZnRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="After" class="comparison-image">
+                <div class="before-image">
+                    <img src="https://images.unsplash.com/photo-1552058544-f612b901cd9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGhhaXIlMjBiZWZvcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="Before" class="comparison-image">
+                </div>
+                <div class="slider-handle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Experiences</h2>
+                <p>See what our clients say about their transformations</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I've never felt more beautiful than after my transformation at Concepta Hair-Hub. The stylists truly listened to what I wanted and delivered beyond my expectations."</p>
+                    <p class="testimonial-author">- Sarah Johnson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The balayage technique they used on my hair looks so natural and grew out beautifully. I get compliments everywhere I go!"</p>
+                    <p class="testimonial-author">- Michael Thompson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"My wedding hair was everything I dreamed of and more. The team took my vague ideas and created a masterpiece that held up all night."</p>
+                    <p class="testimonial-author">- Emily Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready for Your Transformation?</h2>
+            <p>Book a consultation with our stylists to discuss your dream hair makeover</p>
+            <a href="booking.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Concepta Hair-Hub</h3>
+                    <p>Where style meets sophistication. Our salon is dedicated to helping you look and feel your best with personalized hair care services.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Salon Hours</h3>
+                    <ul>
+                        <li>Monday: Closed</li>
+                        <li>Tuesday - Friday: 9am - 8pm</li>
+                        <li>Saturday: 10am - 6pm</li>
+                        <li>Sunday: 11am - 4pm</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Beauty Avenue, Style District</p>
+                    <p>City, State 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@conceptahairhub.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Subscribe</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; margin-bottom: 10px; border: none; border-radius: 4px;">
+                        <button type="submit" class="btn" style="width: 100%; padding: 10px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Concepta Hair-Hub Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../javascript/gallery.js"></script>
+</body>
+</html>
+
+    

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Concepta Hair-Hub Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Concepta <span>Hair-Hub</span></a>
+            <nav>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Book Your Appointment</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Book Now</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Schedule Your Visit</h2>
+                <p>Reserve your spot at our luxury salon for an exceptional experience</p>
+            </div>
+            <div class="booking-container">
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service</option>
+                                <option value="haircut">Precision Haircut</option>
+                                <option value="coloring">Creative Coloring</option>
+                                <option value="highlights">Highlights</option>
+                                <option value="balayage">Balayage</option>
+                                <option value="treatment">Spa Treatment</option>
+                                <option value="styling">Special Occasion Styling</option>
+                                <option value="extension">Hair Extensions</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="stylist">Preferred Stylist (optional)</label>
+                            <select id="stylist" name="stylist">
+                                <option value="">No preference</option>
+                                <option value="elena">Elena Rodriguez</option>
+                                <option value="marcus">Marcus Johnson</option>
+                                <option value="sophia">Sophia Chen</option>
+                                <option value="david">David Kim</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time</option>
+                                <option value="9:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests (optional)</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Book Appointment</button>
+                    </form>
+                </div>
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Salon Hours</h3>
+                        <p>Monday: Closed</p>
+                        <p>Tuesday - Friday: 9am - 8pm</p>
+                        <p>Saturday: 10am - 6pm</p>
+                        <p>Sunday: 11am - 4pm</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+                        <p>123 Beauty Avenue, Style District</p>
+                        <p>City, State 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> Contact Us</h3>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Email: bookings@conceptahairhub.com</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Booking Policy</h3>
+                        <p>Please arrive 10 minutes before your appointment. Cancellations require 24 hours notice to avoid charges. A credit card may be required to secure your booking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Explore our range of premium hair services</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhhaXJjdXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Precision Haircuts</h3>
+                        <p>Expert cuts tailored to your face shape and lifestyle.</p>
+                        <p class="price">Starting from $55</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1536599424079-7b5f15e9b5c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhaXIlMjBjb2xvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Creative Coloring</h3>
+                        <p>From natural tones to vibrant fashion colors.</p>
+                        <p class="price">Starting from $85</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1597243726995-2d3e69e072d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Spa Treatments</h3>
+                        <p>Luxurious spa treatments that restore health and vitality.</p>
+                        <p class="price">Starting from $75</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Experiences</h2>
+                <p>See what our clients say about their visits</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The online booking system was so easy to use. I got an immediate confirmation and reminder texts. The service was exceptional as always!"</p>
+                    <p class="testimonial-author">- Sarah Johnson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I love that I can book my appointments online at any time. The staff is always prepared when I arrive, and I never have to wait."</p>
+                    <p class="testimonial-author">- Michael Thompson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The booking process was seamless, and they were able to accommodate my last-minute request. The stylist was fantastic and really listened to what I wanted."</p>
+                    <p class="testimonial-author">- Emily Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Booking FAQs</h2>
+                <p>Common questions about our booking process</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">How far in advance should I book? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">We recommend booking at least 1-2 weeks in advance for weekday appointments and 2-3 weeks for weekend appointments. For complex services or specific stylists, booking even earlier is advised.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is your cancellation policy? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">We require 24 hours notice for cancellations to avoid a charge. For appointments canceled with less than 24 hours notice, a 50% fee may be applied. No-shows will be charged the full amount of the service.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to pay a deposit? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">For new clients or appointments over 2 hours, we may require a credit card to secure your booking. The card will not be charged unless the cancellation policy is violated.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if I'm running late? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Please call us if you're running late. We'll do our best to accommodate you, but if you're more than 15 minutes late, we may need to reschedule your appointment.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Concepta Hair-Hub</h3>
+                    <p>Where style meets sophistication. Our salon is dedicated to helping you look and feel your best with personalized hair care services.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Salon Hours</h3>
+                    <ul>
+                        <li>Monday: Closed</li>
+                        <li>Tuesday - Friday: 9am - 8pm</li>
+                        <li>Saturday: 10am - 6pm</li>
+                        <li>Sunday: 11am - 4pm</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Beauty Avenue, Style District</p>
+                    <p>City, State 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@conceptahairhub.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Subscribe</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; margin-bottom: 10px; border: none; border-radius: 4px;">
+                        <button type="submit" class="btn" style="width: 100%; padding: 10px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Concepta Hair-Hub Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
