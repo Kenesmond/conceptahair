@@ -107,7 +107,7 @@ nav ul li a:hover {
 .hero-image img{
     align-items: center;
     margin-left: 170px;
-    border: thick solid #b08d57;
+    border: thick solid white;
     height: 50%;
     width: 50%;
     border-radius: 40%;
